@@ -13,16 +13,20 @@ npm install --save use-where
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import { useMyHook } from 'use-where'
+import { useWhere } from "use-where";
 
 const Example = () => {
-  const example = useMyHook()
+  const [isBrowser, isNode, isServer] = useWhere();
   return (
-    <div>{example}</div>
-  )
-}
+    <div>
+      <div>Is browser? {isBrowser()}</div>
+      <div>Is node? {isNode()}</div>
+      <div>Is server? {isServer()}</div>
+    </div>
+  );
+};
 ```
 
 ## License

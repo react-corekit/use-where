@@ -1,12 +1,14 @@
-import React from 'react'
-import { useMyHook } from 'use-where'
+import React from "react";
+import { useWhere } from "use-where";
 
 const App = () => {
-  const example = useMyHook()
+  const [isBrowser, isNode, isServer] = useWhere();
   return (
     <div>
-      {example}
+      <div>Is browser? {isBrowser()}</div>
+      <div>Is node? {isNode()}</div>
+      <div>Is server? {isServer()}</div>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;

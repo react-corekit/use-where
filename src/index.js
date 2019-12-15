@@ -9,5 +9,5 @@ export const useWhere = () => {
     {}.toString.call(global) === "[object global]";
   const isServer = () => !isBrowser();
 
-  return [isBrowser, isNode, isServer];
+  return () => [isBrowser, isNode, isServer];
 };

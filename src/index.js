@@ -1,21 +1,13 @@
-import * as React from 'react'
+import * as React from "react";
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState({
-    counter: 0
-  })
+export const useWhere = () => {
+  const isBrowser = () =>
+    typeof window !== "undefined" &&
+    {}.toString.call(window) === "[object Window]";
+  const isNode = () =>
+    typeof global !== "undefined" &&
+    {}.toString.call(global) === "[object global]";
+  const isServer = () => !isBrowser();
 
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval)
-    }
-  }, [])
-
-  return counter
-}
+  return [isBrowser, isNode, isServer];
+};

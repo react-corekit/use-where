@@ -1,5 +1,5 @@
 import React from "react";
-import { useWhere } from "use-where";
+import { useWhere } from "@react-corekit/use-where";
 
 const App = () => {
   const [isBrowser, isNode, isServer] = useWhere();

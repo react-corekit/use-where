@@ -1,15 +1,15 @@
 {
-  "name": "use-where-example",
-  "homepage": "https://glongh.github.io/use-where",
+  "name": "@react-corekit/use-where-example",
+  "homepage": "https://react-corekit/use-where",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@react-corekit/use-where": "link:..",
     "prop-types": "^15.6.2",
     "react": "link:../node_modules/react",
     "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
-    "use-where": "link:.."
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

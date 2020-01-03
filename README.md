@@ -36,8 +36,11 @@ const [isBrowser, isNode, isServer] = useWhere();
 
 ## Usage
 
+> Visit: https://react-corekit.github.io/use-where/ for a minimalistic live demo
+
 ```jsx
 import React from "react";
+
 import { useWhere } from "@react-corekit/use-where";
 
 const App = () => {

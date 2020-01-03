@@ -2,7 +2,7 @@
 
 > React Hook that detects if the javascript is being loaded from a server (SSR) or a web client
 
-[![NPM](https://img.shields.io/npm/v/use-where.svg)](https://www.npmjs.com/package/use-where) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-where.svg)](https://www.npmjs.com/package/@react-corekit/use-where) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
@@ -22,7 +22,7 @@ const [isBrowser, isNode, isServer] = useWhere();
 
 ## Returns
 
-**isBrowser\***
+**isBrowser**
 
 > A function that detects if the code is being executed in a web browser.
 

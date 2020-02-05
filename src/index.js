@@ -1,7 +1,7 @@
 import React from "react";
 
 /**
-  Provides
+  Provides methods to determinate where the script is running.
  */
 export const useWhere = () => {
   // Returns true if there is a browser's window object.
